@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h2 Leave your lovely message here
+  form(method="POST" action="/new") 
+    p
+      label(for="user") Name : 
+      input(id="user" type="text", value="" name="user")
+    p     
+      label(for="text") Message : 
+      input(id="text" type="text", value="" name="text")
+    button Submit
