@@ -6,7 +6,7 @@ require('dotenv').config()
 
 
 const SQL = `
-DROP TABLE messages;
+DROP TABLE IF EXISTS messages;
 
 CREATE TABLE IF NOT EXISTS messages (
     id serial PRIMARY KEY,
