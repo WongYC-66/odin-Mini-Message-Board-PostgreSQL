@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+
+  <p>Welcome, place a message here</p>
+
+  <a href="/new">
+    <button type="button"> Post a message </button>
+  </a>
+
+  <p>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  </p>
+
+  <% messages.forEach(function(m) { %>
+    <div>
+      <p>
+        <%= m.username %> : <%= m.text %> -------------- on <%= m.added %>
+
+      </p>
+    </div>
+    <% }); %>
+
+      <p>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      </p>
+
+
+</body>
+
+</html>
